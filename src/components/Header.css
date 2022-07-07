@@ -1,0 +1,63 @@
+.header {
+  height: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background-color: black;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo__icon {
+  width: 4.8rem;
+  background-image: url('./icon.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo__title {
+  font-size: 3.2rem;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navigation__list-item {
+  width: 9.6rem;
+  height: 100%;
+}
+
+.navigation__btn {
+  background-color: black;
+  color: white;
+  width: 9.6rem;
+  height: 6.4rem;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0.8rem 1.6rem;
+  transition: all 0.3s;
+}
+
+.navigation__btn.active {
+  background-color: white;
+  color: black;
+  font-weight: 700;
+}
+
+.user {
+  font-size: 1.6rem;
+}

@@ -1,0 +1,85 @@
+.home {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  height: 100%;
+}
+
+.home .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .logo__icon {
+  width: 9.6rem;
+  background-image: url('./icon.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home .logo__title {
+  font-size: 6.4rem;
+}
+
+.copy-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy-container__text {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.copy-container__text:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0 10rem;
+  margin: auto;
+}
+
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.8rem;
+  padding: 2rem;
+  box-shadow: 0 1rem 1.5rem 0 rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-rows: 3.2rem auto;
+  text-align: center;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  backface-visibility: hidden;
+}
+
+.card:first-of-type {
+  background-color: #c75275;
+}
+
+.card:nth-of-type(2) {
+  background-color: #5d4e85;
+}
+
+.card:last-of-type {
+  background-color: #3b9ab2;
+}
+
+.card__title {
+  font-size: 2rem;
+  align-self: center;
+}
+
+.card__desc {
+  font-size: 1.6rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}

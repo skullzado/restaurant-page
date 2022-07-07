@@ -1,0 +1,14 @@
+.footer {
+  height: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  background-color: black;
+  color: white;
+}
+
+.footer__copy {
+  font-size: 2rem;
+  text-align: center;
+}
